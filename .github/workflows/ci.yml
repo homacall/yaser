@@ -67,4 +67,6 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       - run: flutter clean
-      - run: flutter build apk --ignore-deprecation    
+      - run: flutter doctor --android-licenses
+      - run: flutter build apk   
+      
